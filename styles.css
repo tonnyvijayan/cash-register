@@ -1,9 +1,27 @@
 .heading{
     text-align: center;
 }
-/* #output-div{
+.output-div{
+    text-align: center;
     margin: 2rem;
     height: 30vh;
     width: 80%;
     border: 1px solid black;
+}
+.input-div{
+    text-align: center;
+}
+#tender-div{
+    text-align: center;
+    padding: 1rem;
+}
+
+/* #balance-box{
+    text-align: center;
+    height: 7vh;
+    width: 20%;
+    border: solid black;
 } */
+#change-returned{
+    text-align: center;
+}
