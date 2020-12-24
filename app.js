@@ -38,6 +38,14 @@ function enterTenderHandler(){
     balance=(userTender-userBill)
     balanceAppear.innerHTML="<span id=balance-box></span>"
     var balanceDisplay=document.querySelector("#balance-box")
+    if(balance<0){
+        console.log("collect more money")
+        balanceDisplay.innerText="Please collect more money"
+    }else if(balance===0){
+        console.log("payment setlled")
+        balanceDisplay.innerText="Payment settled"
+    }else{
+        
     balanceDisplay.innerText=balance+" to be returned"
     console.log("balance",balance)
     if(notesAvailable.includes(balance)){
@@ -76,6 +84,7 @@ function enterTenderHandler(){
               
         }
     } 
+    }
     outputAmount.innerHTML=CurrencyDisplay;  
 }
 
