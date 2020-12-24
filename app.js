@@ -21,7 +21,7 @@ var balance=0;
 
 function enterClickHandler(){
     userBill=parseInt(enterAmount.value);
-    tenderDivAppear.innerHTML="<input type=text name=Tendered id=amount-tendered placeholder=Amount>  <button id=button-tender>Tender balance</button> "
+    tenderDivAppear.innerHTML="<input type=text name=Tendered id=amount-tendered placeholder=Amount_Received>  <button id=button-tender>Calculate</button> "
     console.log("Clicked")
     console.log(userBill)
     var tenderButton=document.querySelector("#button-tender");
